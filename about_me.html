@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Madeline Bongcac</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#interests">Interests & Hobbies</a></li>
+            <li><a href="#skills">Skills & Strengths</a></li>
+            <li><a href="#goals">Goals & Aspirations</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="/Users/mad22/Downloads/Bongcac,Madeline A. (2).jpg" alt="Formal Picture" width="150 height= 200">
+        <p><strong>Name:</strong> Madeline Bongcac</p>
+        <p><strong>Age:</strong> 20</p>
+        <p><strong>Birthday:</strong> April 22, 2004</p>
+        <p><strong>Location:</strong> Taguig City, Philippines</p>
+        <p><strong>Course:</strong> BSIT, currently 3rd year</p>
+        <p>I'm an IT student with a strong foundation in programming and a passion for continuous learning. While I know the basics of coding, I’m always looking to improve and expand my skills.</p>
+        <p>Apart from tech, I have a keen eye for editing—whether it’s graphics, videos, or content creation. I also enjoy affiliating and exploring ways to connect with different brands and opportunities.</p>
+        <p>I believe in growth and self-improvement, so I’m constantly enhancing my knowledge and skills in various fields. Despite my curiosity for learning, I’m very much a home person—I find comfort in simple things, personal space, and quality time with those who matter.</p>
+        <p>I’m excited about where my journey will take me, and I’m always open to new experiences and challenges!</p>
+    </section>
+
+    <section id="interests">
+        <h2>Interests & Hobbies</h2>
+        <p><strong>Hobbies:</strong> Gaming, Reading, Social Media, Sleeping</p>
+        <p><strong>Favorite Music/Artists:</strong> Sofia Carson, Dove Cameron, IU, Taylor Swift, Sabrina Carpenter</p>
+        <p><strong>Favorite Movies/TV Shows:</strong> The Vampire Diaries, All Barbies, Disney movies</p>
+        <p><strong>Favorite Books:</strong> Anything fantasy or magical</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Strengths</h2>
+        <p><strong>Programming Languages:</strong> HTML, CSS, Python, JavaScript</p>
+        <p><strong>Soft Skills:</strong> Communication, Problem-Solving, Leadership</p>
+        <p><strong>Other Talents:</strong> Art/craft and Makeup</p>
+    </section>
+
+    <section id="goals">
+        <h2>Goals & Aspirations</h2>
+        <p><strong>Short-term Goals:</strong> I want to improve my coding skills.</p>
+        <p><strong>Long-term Goals:</strong> I want to have a good life.</p>
+        <p><strong>Dream Destination:</strong> I want to visit Italy someday.</p>
+        <p><strong>Something Unique About Me:</strong> I collect different kinds of phone casings.</p>
+    </section>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top">↑ Back to Top</a>
+
+    <footer>
+        <p>&copy; 2025 Madeline Bongcac. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const backToTopButton = document.getElementById("back-to-top");
+
+            window.addEventListener("scroll", function() {
+                if (window.scrollY > 300) {
+                    backToTopButton.style.display = "block";
+                } else {
+                    backToTopButton.style.display = "none";
+                }
+            });
+
+            backToTopButton.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent default anchor behavior
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        });
+    </script>
+</body>
+</html>
